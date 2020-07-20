@@ -1,0 +1,46 @@
+GIT: 
+Git is a version control system that makes it easier to track changes to files. When you edit a file, git can tell you exactly what changed, who changed it, and why.
+
+REPOSITORY: 
+
+Think of a repository as a directory that stores all the files, folders, & content needed for your project. Actually it is the object database for the project.
+
+COMMIT 
+
+A commit is a change to a file ( or files ) it's like when you save a file, but with Git, every time you save, it creates a unique ID that allows you to keep record of changes.
+
+BRANCH 🎋 
+
+A branch is simply a lightweight moveable pointer to one of the commits. The default branch name in Git is master.
+
+PUSH: 
+
+Updates a remote branch with the commits made to the current branch. You are literally pushing your changes onto remote respository.
+
+PULL: 
+
+Pull is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+
+Merge:
+
+If we are building new feature and created new branch for the same from master or any other branch. After completing that feature development we need to merge that branch to actual parent branch.
+
+Conflict: 
+
+While merging branch if some other developers worked on in the same file and auto merge is not possible.
+In that case there is conflict in that file for own code and others code, we need to resolve that before merge.
+
+STASH -
+Stash operation takes your modified tracked files, stages changes, and saves them on a stack of unfinished changes that you can reapply at any time.
+
+CHECKOUT used to switch or create new branches
+
+RESET: 
+
+git reset is designed to undo local changes.
+git reset --hard origin/branch
+mostly I use while merging when I messup with conflicts.
+
+git config --global user.name "kullanıcı adınız"
+git config --global user.email "mail adresiniz"
+git config --global core.editor "vim"

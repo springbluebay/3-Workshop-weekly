@@ -1,0 +1,66 @@
+
+body {
+background-color: whitesmoke; /*arka plan rengini değiştirir*/
+margin: 80px; /*sayfanın tamamını kaplamaması alt-üst-sağ-sol boşluk bırakılması için*/
+              /*https://www.w3schools.com/cssref/css_units.asp*/
+}
+
+.h1-h2-h3 {
+  border: solid black 5px; /*border-style(dotted,dashed,solid,double), border-color, border-width*/
+  background-color: yellow;
+  width: fit-content;
+  font-family: 'Montserrat Alternates', Sans-Serif;
+  text-align: center; /*metni kutuya ortlamak için*/
+  margin-left: auto; /*başlıkları sayfanın ortasına almak için*/
+  margin-right: auto; /*başlıkları sayfanın ortasına almak için*/
+  padding: 10px; /*yazıyı borderdan uzaklaştırmak için*/
+}
+img{
+  border: solid red 10px;
+}
+.ortala{
+  width: 800px;;
+  height: 500px;
+  display: table; /*dikey olarak hizalamak için*/
+  margin:0 auto; /*yatay olarak hizalamak için*/
+}
+
+p {
+  border: indigo solid 2px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+}
+
+table{
+  font-size: larger;
+}
+
+tr:hover {
+  background-color: bisque;
+}
+
+#quote{
+  text-align: center;
+  font-style: italic;
+  font-size: x-large;
+  background-color: aquamarine;
+}
+
+li{
+  margin-left: 30px;
+}
+
+a:link{
+  text-decoration: underline; /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_text-decoration*/
+}
+
+a:hover{
+  background-color: lime;
+}
+
+.liste{
+  font-size: larger;
+}
+

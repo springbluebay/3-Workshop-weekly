@@ -1,0 +1,104 @@
+body {border: 5px solid red; 	padding:50px;	margin: 80px;}
+/*sayfanın tamamını kaplamaması alt-üst-sağ-sol boşluk bırakılması için*/
+/*border-style(dotted,dashed,solid,double), border-color, border-width*/
+
+#h1-center {text-align: center;  border:5px dotted green;}
+
+img {border:solid red 10px; }     ***text-align: center;
+
+p {border:solid green 3px; padding:10px;
+	text-align:center; font-size:larger;}
+
+tr:hover{background-color:bisque;}
+
+#quotes{text-align:center; font-style:italic;
+  font-size:x-large;  background-color:aquamarine;}
+/*Son olarak bazı tarayıcılar birden fazla aynı id kullanılan HTML dosyalarında stilleri görmezden gelebilir.*/
+colspan="2" id="quotes"
+.text {border: 5px solid black ;	text-align:center; 	background-color:yellow; padding:10px} 	
+
+a:hover{background-color:limegreen;}
+ /*selector is used to select elements when you mouse over them.*/
+li{margin-left:30px}
+
+---------------------------------------------
+.ortala {
+  display: block; /*dikey olarak hizalamak için*/
+  margin:auto; /*yatay olarak hizalamak için*/
+}
+<li type="circle"> Macintosh</li>
+ul{list-style-type: square;}
+
+iphone {font-size: larger; list-style-type:circle;}
+div {border:5px; background-color:green;}
+-------------------------------------------------------------------------
+Inline
+--------------------
+External
+-------------------
+<head>
+    <link rel="stylesheet" type="text/css" href="file.css">
+  </head>
+--------------------
+Internal
+-------------------
+<head>
+<style>
+
+  p { color: blue;
+	  text-align: right; }
+
+</style>
+</head>
+
+------------------------------------------------------------------------------------------------------------------------
+CSS Cascading Style Sheets - türkçeye Basamaklı Stil Sayfaları olarak çevirebiliriz.
+CSS i 3 şekilde yazabiliyoruz.
+1. inline
+2. embeded
+3. external
+
+1. inline: 
+
+her bir element için ayrı yazmamız gereken bir css çeşidi. fakat her bir element için ayrı ayrı yazılması gerektiği için efektif ve fonksiyonel değil fakat kullanılması gereken durumlarda söz konusu olabilir. 
+
+örnek:
+
+    <h1 style= "color:blue; font-family:Lucida Sans; font-size:25px; border:groove; padding:10px; margin:50px; text-align:center">
+      Steve Jobs - 1955 to 2011
+    </h1>
+
+    <p style="color: red">
+
+
+
+2. internal-embedded:
+head tag inin içine yazılır. head tagini açtıktan sonra style tag i açılır daha sonra hangi elementlerin style ını değiştirmek istiyorsak onların harf kodları yazılıp curly braces açılıp özellikleri yazılır daha sonra curly braces kapatılır daha sonra style tag i kapatılır. bundan sonra body tag i içine yazacağınız tüm paragrafların hepsi artık yeşil renkte olacak, font ailesi olarak helvetica arial kullanılacak ve font size ları 25 pixsel olacak. diyelimki bir paragrafta color ın mavi olması ile ilgili bir inline style yapılmış fakat head tag i içinde internal olarak ta yeşil renk seçilmiş. paragraf hangisini dinlemeli inline mı embedded mi. burada inline da ne yazıyorsa renk o olacaktır. çünkü inline specific bir paragraf için yazılmış diğerleri ise tüm paragrafları kapsıyor. html i yazan kişi paragrafların yeşil renkte olmasını head tag i içinde belirtmiş fakat tek bir paragraf için inline style yaparak diğerleri yeşil olsun fakat bunun mavi olmasını istiyorum demiştir. renkler kod olarak veya isim ile yazılabilir. tabi renklerin birçok tonu olduğundan renk kodları kullanmak daha iyi.
+
+<head>
+
+    <style>
+        p {
+            color: ##FF6347;
+            text-align:left;
+            font-family: Brush Script MT;
+            font-size: 25px;
+        }    
+    </style>
+
+</head>
+
+style tag i içinde bulunan p harfi selector bütün <p> taglari için geçerli olacak. selector dan sonra curly braces açıyoruz ve decleration larımızı yazıyoruz.
+
+
+
+3. external:
+html in dışında hazırlanan css çeşididir. yazdıktan sonra .css uzantısı ile kaydedilir ve head tag i içerisine harici / external css dosyası linki olarak eklenir. 
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="https://lms.clarusway.com/theme/styles.php/boost/1590787301_1/all"> 
+</head>
+
+burada diyelimki paragraflar ile ilgili hem internal css de hemde external css de düzenlemeler var. burada head tag i içindeki internal css geçerli olacaktır. diyelimki 1 websitemiz var ve sitemizde 15 ayrı sayfamız var. eğer internal css  yapmak istersek her sayfaya head tag i içine style tag i açıp tek tek yazmalıyız. fakat external style da bir css file ı oluşturacağız linkini head içine yerleştirdikten sonra  tüm sayfalarımız için bu external css geçerli olacak.  biz codepen in css kısmına yazacağımız kodlar external olarak kabul ediliyor.
+burada 
