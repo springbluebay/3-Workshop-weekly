@@ -501,6 +501,7 @@ $ git push -u origin master
 
 * dosyada değişiklik ekleme/çıkarma yapalım
 
+
 user@Dell MINGW64 ~/desktop/python-assignment1 (master)
 $ git add .
 
